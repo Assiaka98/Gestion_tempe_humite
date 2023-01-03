@@ -25,6 +25,6 @@ import { TabArchivesComponent } from './components/tab-archives/tab-archives.com
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [HeaderComponent]
 })
 export class AppModule { }
