@@ -9,6 +9,7 @@ import { ConnexionComponent } from './components/connexion/connexion.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TabActifComponent } from './components/tab-actif/tab-actif.component';
 import { TabArchivesComponent } from './components/tab-archives/tab-archives.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,12 @@ import { TabArchivesComponent } from './components/tab-archives/tab-archives.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [HeaderComponent]
 })
 export class AppModule { }
