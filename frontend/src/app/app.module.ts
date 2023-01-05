@@ -15,9 +15,8 @@ import { TableArchiveComponent } from './components/table-archive/table-archive.
 import { NgxPaginationModule } from 'ngx-pagination';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { TabActifComponent } from './components/tab-actif/tab-actif.component';
+import { TabArchivesComponent } from './components/tab-archives/tab-archives.component';
 
 @NgModule({
   declarations: [
@@ -33,22 +32,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    Ng2SearchPipeModule,
-    FormsModule,
-    NgxPaginationModule,
-    NgbModule
-
+    AppRoutingModule
   ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthInterceptor,
-      multi: true
-    }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
