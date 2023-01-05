@@ -10,10 +10,10 @@ import { InscriptionComponent } from './components/inscription/inscription.compo
 import { HeaderComponent } from './components/header/header.component';
 import { TableauComponent } from './components/tableau/tableau.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { PageAdminComponent } from './components/page-admin/page-admin.component';
+
 import { TableArchiveComponent } from './components/table-archive/table-archive.component';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { ModifierComponent } from './components/modifier/modifier.component';
+
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -26,9 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     InscriptionComponent,
     HeaderComponent,
     TableauComponent,
-    PageAdminComponent,
     TableArchiveComponent,
-    ModifierComponent,
     DashboardComponent,
     
    
