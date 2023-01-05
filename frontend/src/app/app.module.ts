@@ -1,30 +1,56 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './service/authconfig.interceptor';
+import { ReactiveFormsModule, FormsModule, FormGroup} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
+import { ConnectionComponent } from './components/connection/connection.component';
 import { InscriptionComponent } from './components/inscription/inscription.component';
-import { ConnexionComponent } from './components/connexion/connexion.component';
+import { HeaderComponent } from './components/header/header.component';
+import { TableauComponent } from './components/tableau/tableau.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { PageAdminComponent } from './components/page-admin/page-admin.component';
+import { TableArchiveComponent } from './components/table-archive/table-archive.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { ModifierComponent } from './components/modifier/modifier.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { TabActifComponent } from './components/tab-actif/tab-actif.component';
-import { TabArchivesComponent } from './components/tab-archives/tab-archives.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    ConnectionComponent,
     InscriptionComponent,
-    ConnexionComponent,
+    HeaderComponent,
+    TableauComponent,
+    PageAdminComponent,
+    TableArchiveComponent,
+    ModifierComponent,
     DashboardComponent,
-    TabActifComponent,
-    TabArchivesComponent
+    
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    Ng2SearchPipeModule,
+    FormsModule,
+    NgxPaginationModule,
+    NgbModule
+
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

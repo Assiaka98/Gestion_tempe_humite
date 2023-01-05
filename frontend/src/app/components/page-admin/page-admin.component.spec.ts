@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabArchivesComponent } from './tab-archives.component';
+import { PageAdminComponent } from './page-admin.component';
 
-describe('TabArchivesComponent', () => {
-  let component: TabArchivesComponent;
-  let fixture: ComponentFixture<TabArchivesComponent>;
+describe('PageAdminComponent', () => {
+  let component: PageAdminComponent;
+  let fixture: ComponentFixture<PageAdminComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TabArchivesComponent ]
+      declarations: [ PageAdminComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TabArchivesComponent);
+    fixture = TestBed.createComponent(PageAdminComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

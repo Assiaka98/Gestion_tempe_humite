@@ -1,0 +1,17 @@
+<button class="sidebar-open btnsidebar" (click)="sidebarShow = !sidebarShow">
+    Open Sidebar
+  </button>
+  <div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+    <button class="sidebar-close" (click)="sidebarShow = !sidebarShow">x</button>
+    <div class="sidebar-content">
+        <h2 class="set-align"></h2>
+        <div  class="set-sidebar-text"><i id="dashboardIcon"class="bi bi-speedometer fa-5x"></i> Dashbord</div>
+        <!-- <div class="set-sidebar-text"><i class="bi bi-person-fill-gear"></i>Modif<br>mot de passe</div> -->
+        <button type="button" class="set-sidebar-text"><i class="bi bi-person-fill-gear"></i>Edit</button>
+        <div class="set-sidebar-text"><i class="bi bi-person-add"></i>Inscrire</div>
+        <div class="set-sidebar-text"><i class="bi bi-person-check"></i>Actifs</div>
+        <div class="set-sidebar-text"><i class="bi bi-person-fill-x"></i>Archivés</div>
+    </div>
+  </div>
+
+  
