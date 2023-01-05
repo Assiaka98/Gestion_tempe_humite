@@ -29,6 +29,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [HeaderComponent]
 })
 export class AppModule { }
