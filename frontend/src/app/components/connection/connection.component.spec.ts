@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabArchivesComponent } from './tab-archives.component';
+import { ConnectionComponent } from './connection.component';
 
-describe('TabArchivesComponent', () => {
-  let component: TabArchivesComponent;
-  let fixture: ComponentFixture<TabArchivesComponent>;
+describe('ConnectionComponent', () => {
+  let component: ConnectionComponent;
+  let fixture: ComponentFixture<ConnectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TabArchivesComponent ]
+      declarations: [ ConnectionComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TabArchivesComponent);
+    fixture = TestBed.createComponent(ConnectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
