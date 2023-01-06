@@ -9,14 +9,10 @@ import { ConnectionComponent } from './components/connection/connection.componen
 import { InscriptionComponent } from './components/inscription/inscription.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TableauComponent } from './components/tableau/tableau.component';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { TableArchiveComponent } from './components/table-archive/table-archive.component';
-import { NgxPaginationModule } from 'ngx-pagination';
+import { CommonModule, NgClass } from '@angular/common';
 
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { TabActifComponent } from './components/tab-actif/tab-actif.component';
-import { TabArchivesComponent } from './components/tab-archives/tab-archives.component';
 
 @NgModule({
   declarations: [
@@ -24,15 +20,17 @@ import { TabArchivesComponent } from './components/tab-archives/tab-archives.com
     ConnectionComponent,
     InscriptionComponent,
     HeaderComponent,
-    TableauComponent,
-    TableArchiveComponent,
-    DashboardComponent,
-    
-   
+
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    NgClass,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
